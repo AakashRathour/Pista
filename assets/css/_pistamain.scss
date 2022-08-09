@@ -1,0 +1,374 @@
+.Header {
+  background-color: transparent;
+  z-index: 9;
+  width: 100%;
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid $bgclr;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  @media screen and (max-width: 520px) {
+    .Header {
+      background-color: $bgclr;
+    }
+  }
+  .navbar {
+    background-color: transparent;
+    padding: 0;
+    .navbar-brand img {
+      max-width: 130px;
+    }
+  }
+  .navbar-nav {
+    @media screen and (max-width: 520px) {
+      max-height: 350px;
+      z-index: 999;
+      position: relative;
+      top: 15px;
+      background-color: #fff;
+      padding: 15px;
+      line-height: 35px;
+    }
+    .nav-item .nav-link {
+      // color: #28314a;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      height: inherit;
+      color: $linkclr;
+      display: inline-block;
+      font-family: $boldfont;
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    span {
+      border: 2px solid $primary;
+      border-radius: 3px;
+      padding: 9px 10px;
+      background-color: $primary;
+      color: #fff;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+.siteHeaderFixed {
+  background-color: $bgclr;
+  padding: 2px 0;
+  transition: all 0.4s ease;
+}
+
+// Banner section
+.Banner {
+  padding: 140px 0 40px;
+  background-image: url("../images/bg-dotted.png");
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/mapbg.jpg");
+    z-index: -1;
+  }
+  @media screen and (max-width: 520px) {
+    padding: 90px 0 40px;
+  }
+
+  .Banner_Content {
+    @media screen and (max-width: 520px) {
+      text-align: center;
+      h1 {
+        font-size: 25px;
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  }
+  .Google_Icon {
+    display: inline-block;
+    margin-top: 25px;
+    @media screen and (max-width: 520px) {
+      margin-bottom: 35px;
+    }
+  }
+  .Banner-Image img {
+    width: 100%;
+  }
+}
+
+// Location Tracking Section
+
+.Location_Track {
+  padding: 40px 0;
+  .Location_Track_Heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .Location_Track_Heading h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .Location_Track_Form {
+    padding: 30px 25px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
+    h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      background-color: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+      border-radius: 3px;
+    }
+    input {
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid $bgclr;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.Location_Track_Form .Location_Map_img img {
+  width: 100%;
+  @media screen and (max-width: 520px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.btn-default {
+  width: 100%;
+  background-color: $primary;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 3px;
+  border: 2px solid $primary;
+  margin-top: 10px;
+  font-family: $boldfont;
+}
+
+.btn-default:hover {
+  background-color: transparent;
+  color: $primary;
+}
+
+.Location_Track_Form .form-group label {
+  font-weight: 700;
+  font-size: 14px;
+}
+// Mobile App Section
+.Pista_GPS {
+  padding: 40px 0;
+  .Pista_GPS_Headding {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .Pista_GPS_Track_Icon img {
+    height: 75px;
+    margin-bottom: 15px;
+  }
+  .track-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .Pista_GPS_Mobile img {
+    height: 425px;
+    display: block;
+    margin: 0 auto 40px;
+    transition: all 0.5s;
+  }
+  .Pista_GPS_Download_Button a {
+    width: 100%;
+    background-color: $primary;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 3px;
+    border: 2px solid $primary;
+    margin-top: 10px;
+    font-family: $boldfont;
+    &:hover {
+      background-color: transparent;
+      color: $primary;
+    }
+  }
+}
+
+.Pista_GPS .row .col-md-4:nth-child(1) {
+  text-align: right;
+}
+.Pista_GPS_Features {
+  margin-top: 35px;
+  @media screen and (max-width: 520px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.Pista_GPS_Download_Button {
+  text-align: center;
+}
+
+.Features {
+  padding: 40px 0;
+  background-color: #f0f0f0;
+  .sectionMainHeading {
+    margin-bottom: 15px;
+    h2 {
+      margin-bottom: 0;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+  .FeaturesSection {
+    min-height: 225px;
+    margin-top: 16px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+
+    img {
+      width: 75px;
+      height: 75px;
+      margin-bottom: 5px;
+    }
+    .FeaturesHeading {
+      font-weight: 700;
+      padding-top: 10px;
+    }
+  }
+}
+.Partners {
+  padding: 40px 0;
+  .PartnersLogo {
+    background-color: #fff;
+    padding: 25px 15px;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 3px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 3px rgb(0 0 0 / 10%);
+    border: 1px solid $bgclr;
+    img {
+      max-height: 35px;
+    }
+  }
+}
+.Footer {
+  .Footer_menu {
+    padding: 40px 0;
+    @media screen and (max-width: 520px) {
+      p {
+        padding: 5px 10px;
+        text-align: justify;
+      }
+    }
+  }
+  .logoFooter {
+    max-width: 130px;
+    margin-bottom: 10px;
+  }
+  .supportPista li {
+    font-family: $boldfont;
+    margin-bottom: 12px;
+    @media screen and (max-width: 520px) {
+      padding: 10px;
+    }
+
+    img {
+      max-width: 18px;
+    }
+  }
+  .Footer_socialMedia li {
+    padding: 5px 15px;
+    img {
+      max-width: 18px;
+    }
+  }
+  .Footer_App_Download {
+    @media screen and (max-width: 520px) {
+      padding-top: 10px;
+    }
+    img {
+      max-height: 40px;
+    }
+  }
+  .copyrightFooter {
+    padding: 20px 0;
+    border-top: 1px solid $bgclr;
+    @media screen and (max-width: 520px) {
+      text-align: center;
+    }
+    ul li {
+      margin-right: 10px;
+    }
+    a {
+      text-align: center;
+      color: $linkclr;
+      text-decoration: underline;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// Slider
+.Mobile_Screen_slider {
+  padding: 40px 0;
+  background-color: #f0f0f0;
+  .Headeing {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .screen-slider-wrp .screen-slider .slick-dots {
+    margin-top: 20px;
+    display: flex !important;
+    justify-content: center;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 3px;
+      padding: 0;
+      cursor: pointer;
+      background: $linkclr;
+      button {
+        display: none;
+        &.active {
+          background: $primaryF;
+        }
+      }
+    }
+  }
+  .screen-slider-wrp .screen-slider .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+// Media Query
+@media screen and (max-width: 520px) {
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+}

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@font-face {
+  font-display: optional;
+  font-family: "Pista-Light";
+  src: url("../fonts/montserrat-regular.woff2");
+}
+@font-face {
+  font-display: optional;
+  font-family: "Pista-Bold";
+  src: url("../fonts/montserrat-bold.woff2");
+}
+
+$lightfont: Pista-Light;
+$boldfont: Pista-Bold;
+$primary: #fa742b;
+$linkclr: #28314a;
+$seconderyclr: #000;
+$bgclr: #eee;
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  font-family: $lightfont;
+  font-size: 13px;
+  color: $seconderyclr;
+  letter-spacing: 0.5px;
+}
+a {
+  color: $primary;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+a:hover {
+  color: $primary;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-family: $boldfont;
+  letter-spacing: 0.8px;
+  color: $linkclr;
+}

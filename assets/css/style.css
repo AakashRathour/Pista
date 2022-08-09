@@ -1,0 +1,431 @@
+@font-face {
+  font-display: optional;
+  font-family: "Pista-Light";
+  src: url("../fonts/montserrat-regular.woff2");
+}
+@font-face {
+  font-display: optional;
+  font-family: "Pista-Bold";
+  src: url("../fonts/montserrat-bold.woff2");
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Pista-Light;
+  font-size: 13px;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: #fa742b;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fa742b;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-family: Pista-Bold;
+  letter-spacing: 0.8px;
+  color: #28314a;
+}
+
+.Header {
+  background-color: transparent;
+  z-index: 9;
+  width: 100%;
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #eee;
+  transition: all 0.4s ease;
+}
+@media screen and (max-width: 520px) {
+  .Header .Header {
+    background-color: #eee;
+  }
+}
+.Header .navbar {
+  background-color: transparent;
+  padding: 0;
+}
+.Header .navbar .navbar-brand img {
+  max-width: 130px;
+}
+@media screen and (max-width: 520px) {
+  .Header .navbar-nav {
+    max-height: 350px;
+    z-index: 999;
+    position: relative;
+    top: 15px;
+    background-color: #fff;
+    padding: 15px;
+    line-height: 35px;
+  }
+}
+.Header .navbar-nav .nav-item .nav-link {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  height: inherit;
+  color: #28314a;
+  display: inline-block;
+  font-family: Pista-Bold;
+}
+.Header .navbar-nav .nav-item .nav-link:hover {
+  color: #fa742b;
+}
+.Header .navbar-nav span {
+  border: 2px solid #fa742b;
+  border-radius: 3px;
+  padding: 9px 10px;
+  background-color: #fa742b;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.siteHeaderFixed {
+  background-color: #eee;
+  padding: 2px 0;
+  transition: all 0.4s ease;
+}
+
+.Banner {
+  padding: 140px 0 40px;
+  background-image: url("../images/bg-dotted.png");
+  position: relative;
+}
+.Banner:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/mapbg.jpg");
+  z-index: -1;
+}
+@media screen and (max-width: 520px) {
+  .Banner {
+    padding: 90px 0 40px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .Banner .Banner_Content {
+    text-align: center;
+  }
+  .Banner .Banner_Content h1 {
+    font-size: 25px;
+  }
+}
+.Banner .Banner_Content h1 {
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.Banner .Google_Icon {
+  display: inline-block;
+  margin-top: 25px;
+}
+@media screen and (max-width: 520px) {
+  .Banner .Google_Icon {
+    margin-bottom: 35px;
+  }
+}
+.Banner .Banner-Image img {
+  width: 100%;
+}
+
+.Location_Track {
+  padding: 40px 0;
+}
+.Location_Track .Location_Track_Heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.Location_Track .Location_Track_Heading h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.Location_Track .Location_Track_Form {
+  padding: 30px 25px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
+}
+.Location_Track .Location_Track_Form h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 3px;
+}
+.Location_Track .Location_Track_Form input {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.Location_Track_Form .Location_Map_img img {
+  width: 100%;
+}
+@media screen and (max-width: 520px) {
+  .Location_Track_Form .Location_Map_img img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.btn-default {
+  width: 100%;
+  background-color: #fa742b;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 3px;
+  border: 2px solid #fa742b;
+  margin-top: 10px;
+  font-family: Pista-Bold;
+}
+
+.btn-default:hover {
+  background-color: transparent;
+  color: #fa742b;
+}
+
+.Location_Track_Form .form-group label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.Pista_GPS {
+  padding: 40px 0;
+}
+.Pista_GPS .Pista_GPS_Headding {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.Pista_GPS .Pista_GPS_Track_Icon img {
+  height: 75px;
+  margin-bottom: 15px;
+}
+.Pista_GPS .track-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.Pista_GPS .Pista_GPS_Mobile img {
+  height: 425px;
+  display: block;
+  margin: 0 auto 40px;
+  transition: all 0.5s;
+}
+.Pista_GPS .Pista_GPS_Download_Button a {
+  width: 100%;
+  background-color: #fa742b;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 3px;
+  border: 2px solid #fa742b;
+  margin-top: 10px;
+  font-family: Pista-Bold;
+}
+.Pista_GPS .Pista_GPS_Download_Button a:hover {
+  background-color: transparent;
+  color: #fa742b;
+}
+
+.Pista_GPS .row .col-md-4:nth-child(1) {
+  text-align: right;
+}
+
+.Pista_GPS_Features {
+  margin-top: 35px;
+}
+@media screen and (max-width: 520px) {
+  .Pista_GPS_Features {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Pista_GPS_Features {
+    text-align: center;
+  }
+}
+
+.Pista_GPS_Download_Button {
+  text-align: center;
+}
+
+.Features {
+  padding: 40px 0;
+  background-color: #f0f0f0;
+}
+.Features .sectionMainHeading {
+  margin-bottom: 15px;
+}
+.Features .sectionMainHeading h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.Features .FeaturesSection {
+  min-height: 225px;
+  margin-top: 16px;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.Features .FeaturesSection img {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 5px;
+}
+.Features .FeaturesSection .FeaturesHeading {
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.Partners {
+  padding: 40px 0;
+}
+.Partners .PartnersLogo {
+  background-color: #fff;
+  padding: 25px 15px;
+  text-align: center;
+  margin-top: 16px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+}
+.Partners .PartnersLogo img {
+  max-height: 35px;
+}
+
+.Footer .Footer_menu {
+  padding: 40px 0;
+}
+@media screen and (max-width: 520px) {
+  .Footer .Footer_menu p {
+    padding: 5px 10px;
+    text-align: justify;
+  }
+}
+.Footer .logoFooter {
+  max-width: 130px;
+  margin-bottom: 10px;
+}
+.Footer .supportPista li {
+  font-family: Pista-Bold;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 520px) {
+  .Footer .supportPista li {
+    padding: 10px;
+  }
+}
+.Footer .supportPista li img {
+  max-width: 18px;
+}
+.Footer .Footer_socialMedia li {
+  padding: 5px 15px;
+}
+.Footer .Footer_socialMedia li img {
+  max-width: 18px;
+}
+@media screen and (max-width: 520px) {
+  .Footer .Footer_App_Download {
+    padding-top: 10px;
+  }
+}
+.Footer .Footer_App_Download img {
+  max-height: 40px;
+}
+.Footer .copyrightFooter {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+@media screen and (max-width: 520px) {
+  .Footer .copyrightFooter {
+    text-align: center;
+  }
+}
+.Footer .copyrightFooter ul li {
+  margin-right: 10px;
+}
+.Footer .copyrightFooter a {
+  text-align: center;
+  color: #28314a;
+  text-decoration: underline;
+}
+.Footer .copyrightFooter a:hover {
+  color: #fa742b;
+}
+
+.Mobile_Screen_slider {
+  padding: 40px 0;
+  background-color: #f0f0f0;
+}
+.Mobile_Screen_slider .Headeing {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.Mobile_Screen_slider .screen-slider-wrp .screen-slider .slick-dots {
+  margin-top: 20px;
+  display: flex !important;
+  justify-content: center;
+}
+.Mobile_Screen_slider .screen-slider-wrp .screen-slider .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 3px;
+  padding: 0;
+  cursor: pointer;
+  background: #28314a;
+}
+.Mobile_Screen_slider .screen-slider-wrp .screen-slider .slick-dots li button {
+  display: none;
+}
+.Mobile_Screen_slider .screen-slider-wrp .screen-slider .slick-prev,
+.Mobile_Screen_slider .slick-next {
+  display: none !important;
+}
+
+@media screen and (max-width: 520px) {
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+}/*# sourceMappingURL=style.css.map */
